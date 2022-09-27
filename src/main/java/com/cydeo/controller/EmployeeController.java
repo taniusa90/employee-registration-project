@@ -47,7 +47,8 @@ public class EmployeeController {
     @GetMapping("/list")
     public String listEmployees(Model model) {
         model.addAttribute("employeeList", employeeService.readAllEmployee());
-        return "employee/employee-list";   // Without redirect we are using html file paths
+        return "employee/employee-list";   // Without redirect, we are using html file paths
+
     }
 
 
